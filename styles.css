@@ -1,9 +1,9 @@
-/* Global Styles */
+ /* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center/cover;
+    background: url('https://plus.unsplash.com/premium_photo-1674811564431-4be5bd37fb6a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYnNpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww') no-repeat center center/cover;
     color: white;
     text-align: center;
 }
@@ -14,7 +14,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(30, 30, 30, 0.9); /* Darker Grey */
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,6 +29,8 @@ header .logo {
 nav ul {
     list-style: none;
     display: flex;
+    padding: 0;
+    transform: translateX(-30px); /* Moves the links left */
 }
 
 nav ul li {
@@ -43,17 +45,39 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: cyan;
+    color: rgb(134, 198, 198);
 }
 
-/* Hero Section */
+#about {
+    background: url('https://your-about-image-link.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+
 #hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: url('https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?ga=GA1.1.2043485567.1730731257&semt=ais_hybrid') no-repeat center center/cover;
+    padding: 20px;
 }
+
+
 
 .hero-text {
     max-width: 600px;
@@ -65,7 +89,7 @@ nav ul li a:hover {
 }
 
 .hero-text .highlight {
-    color: cyan;
+    color: rgb(221, 211, 13);
 }
 
 .hero-text p {
@@ -77,14 +101,14 @@ nav ul li a:hover {
     margin-top: 15px;
     padding: 10px 20px;
     color: white;
-    background: cyan;
+    background: rgb(74, 127, 212);
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: darkcyan;
+    background: rgb(58, 114, 184);
 }
 
 /* Sections */
@@ -94,6 +118,7 @@ section {
 
 h2 {
     font-size: 36px;
+    color: rgb(157, 38, 207);
     margin-bottom: 20px;
 }
 
@@ -102,33 +127,66 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 12px; /* Adds spacing between skill boxes */
 }
 
 .skill {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
+    background: white; /* White background */
+    color: black; /* Black text for contrast */
+    padding: 12px 24px; /* Increased padding for better appearance */
+    border-radius: 8px; /* Smooth rounded corners */
     font-size: 18px;
-    border: 1px solid cyan;
+    font-weight: bold;
+    border: 2px solid #ccc; /* Light grey border */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Projects */
+.skill:hover {
+    transform: scale(1.05); /* Slight hover effect */
+    border-color: cyan; /* Highlight border on hover */
+}
+
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center; /* Centers project box */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .project {
-    background: rgba(0, 0, 0, 0.7);
+    background: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid #ccc;
+    box-shadow: none;
+    width: 500px; /* Increased width */
+    text-align: left; /* Align text properly */
 }
 
+/* Keep the list aligned properly */
+.project-list {
+    list-style: none; /* Remove dots */
+    padding: 0; /* Remove default padding */
+    margin-left: 0; /* Ensure no extra margin */
+}
+
+.project-list li {
+    margin-bottom: 5px; /* Add spacing between items */
+}
+
+/* Style the link */
 .project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
     text-decoration: none;
-    color: cyan;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 
 /* Contact */
@@ -145,6 +203,16 @@ form input, form textarea {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
+    background: white; /* White background */
+    color: black; /* Black text for contrast */
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+form input:focus, form textarea:focus {
+    border: 1px solid cyan; /* Cyan border on focus */
+    outline: none;
+    box-shadow: 0 0 5px cyan;
 }
 
 form button {
@@ -158,11 +226,11 @@ form button {
 }
 
 form button:hover {
-    background: darkcyan;
+    background: rgb(28, 62, 185);
 }
 
 /* Footer */
 footer {
     padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(8, 8, 8, 0.9); /* Darker Grey */
 }
