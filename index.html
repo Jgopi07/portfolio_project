@@ -76,15 +76,27 @@
 </section>
 
     <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="successMessage" style="display: none; color: cyan; font-weight: bold; margin-top: 10px;">
+        Message Sent Successfully! ✅
+    </p>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevents the form from refreshing the page
+        document.getElementById("successMessage").style.display = "block"; // Show success message
+        this.reset(); // Clears the form fields
+    });
+</script>
+
 
     <!-- Footer -->
     <!--<footer>
