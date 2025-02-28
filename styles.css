@@ -1,4 +1,4 @@
- /* Global Styles */
+ /* This is for total website styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,66 +8,42 @@ body {
     text-align: center;
 }
 
-/* Header */
+/* This is for design of Header section */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: rgba(30, 30, 30, 0.9); /* Darker Grey */
+    background: rgba(30, 30, 30, 0.9); 
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
-
 header .logo {
     font-size: 24px;
     font-weight: bold;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     padding: 0;
-    transform: translateX(-30px); /* Moves the links left */
+    transform: translateX(-30px); 
 }
-
 nav ul li {
     margin: 0 15px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: 0.3s;
 }
-
 nav ul li a:hover {
     color: rgb(134, 198, 198);
 }
 
-#about {
-    background: url('https://your-about-image-link.jpg') no-repeat center center/cover;
-    padding: 60px 20px;
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-#about p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-
-
-
+/* This is for my highligths section */
 #hero {
     height: 100vh;
     display: flex;
@@ -76,26 +52,21 @@ nav ul li a:hover {
     background: url('https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149009903.jpg?ga=GA1.1.2043485567.1730731257&semt=ais_hybrid') no-repeat center center/cover;
     padding: 20px;
 }
-
-
-
 .hero-text {
     max-width: 600px;
 }
-
 .hero-text h1 {
     font-size: 48px;
     margin-bottom: 10px;
 }
-
 .hero-text .highlight {
     color: rgb(221, 211, 13);
 }
-
 .hero-text p {
     font-size: 20px;
 }
 
+/* This is for button design */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -106,54 +77,68 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: 0.3s;
 }
-
 .btn:hover {
     background: rgb(58, 114, 184);
 }
 
-/* Sections */
+/* This is for about me design section */
+#about {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* This is for every section */
 section {
     padding: 60px 20px;
 }
 
+/* This is for headings h2 size */
 h2 {
     font-size: 36px;
     color: rgb(157, 38, 207);
     margin-bottom: 20px;
 }
 
-/* Skills */
+/* This is for Skills design section */
 .skills-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px; /* Adds spacing between skill boxes */
+    gap: 12px; 
 }
-
 .skill {
-    background: white; /* White background */
-    color: black; /* Black text for contrast */
-    padding: 12px 24px; /* Increased padding for better appearance */
-    border-radius: 8px; /* Smooth rounded corners */
+    background: white; 
+    color: black;
+    padding: 12px 24px; 
+    border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
-    border: 2px solid #ccc; /* Light grey border */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    border: 2px solid #ccc; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
     transition: transform 0.2s ease-in-out;
 }
-
 .skill:hover {
-    transform: scale(1.05); /* Slight hover effect */
-    border-color: cyan; /* Highlight border on hover */
+    transform: scale(1.05); 
+    border-color: cyan; 
 }
 
+/* This is for Projects design section */
 .projects-grid {
     display: flex;
-    justify-content: center; /* Centers project box */
+    justify-content: center; 
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .project {
     background: white;
     padding: 20px;
@@ -161,22 +146,17 @@ h2 {
     color: black;
     border: 2px solid #ccc;
     box-shadow: none;
-    width: 500px; /* Increased width */
-    text-align: left; /* Align text properly */
+    width: 500px; 
+    text-align: left; 
 }
-
-/* Keep the list aligned properly */
 .project-list {
-    list-style: none; /* Remove dots */
-    padding: 0; /* Remove default padding */
-    margin-left: 0; /* Ensure no extra margin */
+    list-style: none; 
+    padding: 0; 
+    margin-left: 0; 
 }
-
 .project-list li {
-    margin-bottom: 5px; /* Add spacing between items */
+    margin-bottom: 5px; 
 }
-
-/* Style the link */
 .project a {
     display: inline-block;
     margin-top: 10px;
@@ -184,18 +164,16 @@ h2 {
     font-weight: bold;
     text-decoration: none;
 }
-
 .project a:hover {
     text-decoration: underline;
 }
 
-/* Contact */
+/* This is for Contact design section */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 form input, form textarea {
     width: 80%;
     max-width: 400px;
@@ -203,18 +181,16 @@ form input, form textarea {
     margin: 10px 0;
     border: none;
     border-radius: 5px;
-    background: white; /* White background */
-    color: black; /* Black text for contrast */
+    background: white; 
+    color: black; 
     font-size: 16px;
-    border: 1px solid #ccc; /* Light gray border */
+    border: 1px solid #ccc;
 }
-
 form input:focus, form textarea:focus {
-    border: 1px solid cyan; /* Cyan border on focus */
+    border: 1px solid cyan; 
     outline: none;
     box-shadow: 0 0 5px cyan;
 }
-
 form button {
     padding: 10px 20px;
     border: none;
@@ -224,13 +200,12 @@ form button {
     cursor: pointer;
     transition: 0.3s;
 }
-
 form button:hover {
     background: rgb(28, 62, 185);
 }
 
-/* Footer */
+/* This is for Footer design section */
 footer {
     padding: 15px;
-    background: rgba(8, 8, 8, 0.9); /* Darker Grey */
+    background: rgba(8, 8, 8, 0.9); 
 }
